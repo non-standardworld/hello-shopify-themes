@@ -1,0 +1,46 @@
+<section class="page-width">
+  <h3>{{ section.settings.title }}</h3>
+  <dl>
+    {% for block in section.blocks %}
+      <dt>{{ block.settings.title }}</dt>
+      <dd>{{ block.settings.answer }}</dd>
+    {% endfor %}
+  </dl>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "FAQ",
+      "label": "FAQのタイトル"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ項目",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "質問を入力してください"
+        },
+        {
+          "type": "text",
+          "id": "answer",
+          "label": "回答を入力してください"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}

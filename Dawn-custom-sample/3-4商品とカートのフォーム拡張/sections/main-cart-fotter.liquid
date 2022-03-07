@@ -1,0 +1,23 @@
+{% comment %}
+Dawnのdiv.cart__footer内に存在する{%- if section.settings.show_cart_note -%}条件判定内に記述を追加します。
+{% endcomment %}
+<div class="cart__footer">
+  {%- if section.settings.show_cart_note -%}
+    <cart-note class="cart__note field">
+      {% comment %}Dawnの元記述は省略{% endcomment %}
+    </cart-note>
+    <p class="cart-attribute__field">
+      <input type="hidden" name="attributes[無料ラッピング希望]" form="cart" value="No">
+      <input type="checkbox" id="giftRequest" name="attributes[無料ラッピング希望]" form="cart" value="Yes"{% if cart.attributes["無料ラッピング希望"] == "Yes" %} checked{% endif %}>
+      <label for="giftRequest">無料ラッピング希望</label>
+    </p>
+  {%- endif -%}
+
+  <div class="cart__blocks">
+    {% comment %}Dawnの元記述は省略{% endcomment %}
+  </div>
+</div>
+
+{% schema %}
+// //本カスタマイズではschemaタグを編集しないため記述省略
+{% endschema %}

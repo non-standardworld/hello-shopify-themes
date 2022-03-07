@@ -1,0 +1,30 @@
+{% comment %}
+============================================
+⚠️注意
+本カスタマイズを実施する際は、P105〜P106の「動的チェックアウトボタンとform要素外のLine Item Property不具合」注意欄をよく読んでから行ってください。
+============================================
+{% endcomment %}
+
+{% comment %}
+Dawnのdiv#ProductInfo-{{ section.id }}内に存在する{%- for block in section.blocks -%}ループ外に記述を追加します。
+{% endcomment %}
+<div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
+  {%- assign product_form_id = 'product-form-' | append: section.id -%}
+  {%- for block in section.blocks -%}
+  {% comment %}Dawnの元記述は省略{% endcomment %}
+  {%- endfor -%}
+  {% comment %}
+  いったんループ外に配置していますが、余力があれば独自ブロックに置き換えてみると便利になります。
+  {% endcomment %}
+  <p class="line-item-property__field">
+    <label for="engraveTxt">刻印する文言</label>
+    {% comment %}
+    Dawnの{%- form 'product',…から始まる商品購入フォームのIDと、input要素のform="{{ product_form_id }}"値が一致するように注意してください。
+    {% endcomment %}
+    <input id="engraveTxt" type="text" name="properties[刻印する文言]" form="{{ product_form_id }}">
+  </p>
+</div>
+
+{% schema %}
+// 本カスタマイズではschemaタグを編集しないため記述省略
+{% endschema %}
