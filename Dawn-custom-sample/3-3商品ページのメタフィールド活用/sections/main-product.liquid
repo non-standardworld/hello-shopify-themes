@@ -13,6 +13,16 @@ Dawnのdiv#ProductInfo-{{ section.id }}内に存在する{%- for block in sectio
       {%- if product.metafields.my_fields.release_date.value != blank -%}
         <p>{{ block.settings.text }}</p>
       {%- endif -%}
+    {% comment %}
+    以下は追加位置を明確にするための既存記述サンプルです。
+    {% endcomment %}
+    {%- when 'text' -%}
+      <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+        {{- block.settings.text -}}
+      </p>
+    {% comment %}
+    以下記述は省略
+    {% endcomment %}
     {%- endcase -%}
   {%- endfor -%}
 </div>

@@ -1,13 +1,5 @@
 [
-  {
-    "name": "theme_info",
-    "theme_name": "Dawn",
-    "theme_version": "3.0.0",
-    "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
-  },
-  // 以下、Dawnのsettings_schema.jsonから、タイポグラフィのsettings記述のみを抜粋
+  // 以下、Dawnのsettings_schema.jsonから、タイポグラフィのsettings記述箇所のみを抜粋
   {
     "name": "t:settings_schema.typography.name",
     "settings": [
@@ -25,7 +17,7 @@
       {
         "type": "range",
         "id": "heading_scale",
-        "min": 75,
+        "min": 75, //縮小スケールの最小値を75%に変更
         "max": 150,
         "step": 5,
         "unit": "%",
@@ -43,12 +35,14 @@
         "label": "t:settings_schema.typography.settings.type_body_font.label",
         "info": "t:settings_schema.typography.settings.type_body_font.info"
       },
+      // 日本語フォント記述設定ここから
       {
         "type": "textarea",
         "id": "type_body_jp_font",
         "label": "日本語フォント設定",
         "info": "この欄に入力されたfont-familyをフォント設定に追加します。"
       },
+      // 日本語フォント記述設定ここまで
       {
         "type": "range",
         "id": "body_scale",

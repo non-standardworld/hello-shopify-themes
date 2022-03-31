@@ -19,7 +19,7 @@ Dawnのdiv#ProductInfo-{{ section.id }}内に存在する{%- for block in sectio
   <p class="line-item-property__field">
     <label for="engraveTxt">刻印する文言</label>
     {% comment %}
-    Dawnの{%- form 'product',…から始まる商品購入フォームのIDと、input要素のform="{{ product_form_id }}"値が一致するように注意してください。
+    Dawnの商品購入フォームのID値と、input要素のform属性値が一致しているか確認してください。
     {% endcomment %}
     <input id="engraveTxt" type="text" name="properties[刻印する文言]" form="{{ product_form_id }}">
   </p>
