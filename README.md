@@ -8,6 +8,7 @@
 - [サンプルコード](https://github.com/non-standardworld/hello-shopify-themes/tree/main/Dawn-custom-sample)
 - [正誤表](https://github.com/non-standardworld/hello-shopify-themes/blob/main/%E6%AD%A3%E8%AA%A4%E8%A1%A8.md)
 - [本文中のURL一覧](https://github.com/non-standardworld/hello-shopify-themes/blob/main/%E6%9C%AC%E6%96%87%E5%86%85URL%E3%83%AA%E3%82%B9%E3%83%88.md)
+- [トラブルシューティング](https://github.com/non-standardworld/hello-shopify-themes/blob/main/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0.md)
 
 ### サンプルコードについて
 Dawnテーマ本体のソースコードは、開発ツールShopify CLIから最新版を取得できるため、GitHub上のサンプルコードには含めていません。本書で新規作成するLiquidファイル、および編集するコードのみを公開しています。
