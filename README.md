@@ -15,6 +15,14 @@ Dawnテーマ本体のソースコードは、開発ツールShopify CLIから�
 
 なお、カスタマイズ事例の一部は、後日アップロード予定の解説動画から実際の完成画面を確認可能です。
 
+### 動画解説について
+本書P6で案内していた「本書で紹介するカスタマイズ事例の一部は、後日アップロード予定の解説動画から実際の完成画面を確認可能」の件、ようやく公開が叶いました！  
+以下のYouTube再生リストからご覧いただけます。  
+https://www.youtube.com/watch?v=VdmRAab4ppE&list=PL4Iswh7hxk8CT4B-KExcoSCGAmJfD1PfO
+
+カスタマイズ事例に限らず、第3章の内容すべてを解説しています。
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VdmRAab4ppE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Dawn4.0.0およびDawn5.0.0サポートについて
 本書は2022年2月時点の情報に基づいて執筆されています。執筆時のDawnテーマバージョンは3.0.0です。<br>
 2022年3月にリリースされたDawnバージョン4.0.0、および2022年4月にリリースされたバージョン5.0.0でも、本文中のサンプルコードはすべて動作することを確認しております。<br>
