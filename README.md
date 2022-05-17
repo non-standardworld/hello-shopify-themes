@@ -21,7 +21,6 @@ Dawnテーマ本体のソースコードは、開発ツールShopify CLIから�
 https://www.youtube.com/watch?v=VdmRAab4ppE&list=PL4Iswh7hxk8CT4B-KExcoSCGAmJfD1PfO
 
 カスタマイズ事例に限らず、第3章の内容すべてを解説しています。
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VdmRAab4ppE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Dawn4.0.0およびDawn5.0.0サポートについて
 本書は2022年2月時点の情報に基づいて執筆されています。執筆時のDawnテーマバージョンは3.0.0です。<br>
