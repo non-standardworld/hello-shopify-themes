@@ -2,7 +2,7 @@
 Dawnのdiv.cart__footer内に存在する{%- if section.settings.show_cart_note -%}条件判定内に記述を追加します。
 {% endcomment %}
 <div class="cart__footer">
-  {%- if section.settings.show_cart_note -%}
+  {%- if settings.show_cart_note -%}{% comment %}Dawn6.0.0から記述が変わりました。旧記述は{%- if section.settings.show_cart_note -%}という記述になっています{% endcomment %}
     <cart-note class="cart__note field">
       {% comment %}Dawnの元記述は省略{% endcomment %}
     </cart-note>
