@@ -1,5 +1,5 @@
 {% comment %}
-Dawn6.0.0からドロワー形式のカートが追加されました。ドロワーカートを利用する場合は、こちらのsnippets/cart-drawer.liquidにも合わせてCart Note用のカスタマイズを追加してください。
+Dawn6.0.0からドロワー形式のカートが追加されました。ドロワーカートを利用する場合は、こちらのsnippets/cart-drawer.liquidにも合わせてCart attribute用のカスタマイズを追加してください。
 ※sections/main-cart-footer.liquidに同一コードを書くことになるため、コードをsnippets化して {% render 'cart-note' %}のように読み込ませるとよりスマートです
 {% endcomment %}
 <div class="drawer__footer">
@@ -14,7 +14,7 @@ Dawn6.0.0からドロワー形式のカートが追加されました。ドロ�
       <cart-note class="cart__note field">
         {% comment %}Dawnの元記述は省略{% endcomment %}
       </cart-note>
-      {% comment %}Cart Note記述開始{% endcomment %}
+      {% comment %}Cart attribute記述開始{% endcomment %}
       <p class="cart-attribute__field">
         <input type="hidden" name="attributes[無料ラッピング希望]" form="cart" value="No">
         <input type="checkbox" id="giftRequest" name="attributes[無料ラッピング希望]" form="cart" value="Yes"{% if cart.attributes["無料ラッピング希望"] == "Yes" %} checked{% endif %}>
