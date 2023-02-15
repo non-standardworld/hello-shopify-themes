@@ -27,14 +27,22 @@ Dawnのdiv#ProductInfo-{{ section.id }}内に存在する{%- for block in sectio
   {%- endfor -%}
 </div>
 
+{% comment %}
+  JSONに関する補足
+
+  "blocks"内の記述について
+  46〜57行目の記述を、Dawnのblocks配列内、任意の場所に追加してください。
+  blocks末尾に追加する場合、57行目のカンマは不要です。
+
+  58行目以降の記述は、追加位置をわかりやすくするためのサンプルです。内容は省略しています。
+
+{% endcomment %}
 {% schema %}
 {
   "name": "t:sections.main-product.name",
   "tag": "section",
   "class": "section",
   "blocks": [
-    // Dawnのblocks配列内、任意の場所に追加してください。
-    // blocks末尾に追加する場合、39行目のカンマは不要です。
     {
       "type": "release_date",
       "name": "発売日",
@@ -47,14 +55,11 @@ Dawnのdiv#ProductInfo-{{ section.id }}内に存在する{%- for block in sectio
         }
       ]
     },
-    // 以下は追加位置を明確にするための既存ブロックサンプルです
     {
       "type": "text",
-      // 省略
     }
   ],
   "settings": [
-    //本カスタマイズではsection.settings属性は編集しないため記述省略
   ]
 }
 {% endschema %}

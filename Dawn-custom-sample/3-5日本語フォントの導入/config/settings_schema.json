@@ -1,5 +1,13 @@
 [
-  // 以下、Dawnのsettings_schema.jsonから、タイポグラフィのsettings記述箇所のみを抜粋
+  {
+    "__comment": [
+      "2〜10行目までの記述はJSONに関する補足コメントです。カスタマイズ利用時には削除してください",
+      "以下、Dawnのsettings_schema.jsonから、タイポグラフィのsettings記述箇所のみを抜粋しています",
+      "編集箇所は下記のとおり",
+      "28行目：heading_scaleのmin（縮小スケールの最小値）を75%に変更",
+      "46-51行目：日本語フォント記述設定を追加"
+    ]
+  },
   {
     "name": "t:settings_schema.typography.name",
     "settings": [
@@ -17,7 +25,7 @@
       {
         "type": "range",
         "id": "heading_scale",
-        "min": 75, //縮小スケールの最小値を75%に変更
+        "min": 75,
         "max": 150,
         "step": 5,
         "unit": "%",
@@ -35,14 +43,12 @@
         "label": "t:settings_schema.typography.settings.type_body_font.label",
         "info": "t:settings_schema.typography.settings.type_body_font.info"
       },
-      // 日本語フォント記述設定ここから
       {
         "type": "textarea",
         "id": "type_body_jp_font",
         "label": "日本語フォント設定",
         "info": "この欄に入力されたfont-familyをフォント設定に追加します。"
       },
-      // 日本語フォント記述設定ここまで
       {
         "type": "range",
         "id": "body_scale",
